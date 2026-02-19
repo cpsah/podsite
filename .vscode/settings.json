@@ -11,7 +11,9 @@
         ".specify/scripts/powershell/": true,
         "git fetch": true,
         "git ls-remote": true,
-        "true": true
+        "true": true,
+        "npx create-next-app@latest": true,
+        "npx --yes create-next-app@latest": true
     }
 }
 

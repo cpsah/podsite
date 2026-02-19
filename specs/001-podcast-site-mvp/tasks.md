@@ -17,12 +17,12 @@
 
 **Purpose**: Initialize the Next.js project with static export constraints.
 
-- [ ] T001 Create Next.js app scaffold in web/ (create-next-app) producing web/package.json and web/app/layout.tsx
-- [ ] T002 Configure static export in web/next.config.ts (set `output: 'export'` and ensure static-host compatibility)
-- [ ] T003 [P] Configure scripts in web/package.json so `npm test` runs lint + production build
-- [ ] T004 [P] Add global CSS variables + baseline responsive styles in web/app/globals.css
-- [ ] T005 [P] Implement base App Router layout shell in web/app/layout.tsx (header slot + main content container)
-- [ ] T006 [P] Add site metadata defaults (title/description) in web/app/layout.tsx using build-time values
+- [x] T001 Create Next.js app scaffold in web/ (create-next-app) producing web/package.json and web/app/layout.tsx
+- [x] T002 Configure static export in web/next.config.ts (set `output: 'export'` and ensure static-host compatibility)
+- [x] T003 [P] Configure scripts in web/package.json so `npm test` runs lint + production build
+- [x] T004 [P] Add global CSS variables + baseline responsive styles in web/app/globals.css
+- [x] T005 [P] Implement base App Router layout shell in web/app/layout.tsx (header slot + main content container)
+- [x] T006 [P] Add site metadata defaults (title/description) in web/app/layout.tsx using build-time values
 
 ---
 
@@ -32,17 +32,17 @@
 
 **Checkpoint**: After this phase, each user story can be implemented without changing shared foundations.
 
-- [ ] T007 [P] Define content types in web/content/types.ts (Episode, ShowInfo, FAQItem)
-- [ ] T008 [P] Create ShowInfo content module in web/content/show.ts (stable show title/tagline/description)
-- [ ] T009 [P] Create FAQ content module in web/content/faqs.ts with >= 5 items
-- [ ] T010 [P] Create Episodes content module in web/content/episodes.ts with exactly 20 episodes and deterministic ordering rules
-- [ ] T011 [P] Implement featured selection helper in web/content/episodes.ts (`getFeaturedEpisode()` returns most recent publishDate)
-- [ ] T012 [P] Add mocked audio asset at web/public/audio/teaser.mp3 and reference it as Episode.audioSrc for all episodes
-- [ ] T013 [P] Implement navigation header component in web/components/SiteHeader.tsx with styles in web/components/SiteHeader.module.css
-- [ ] T014 [P] Implement episode card component in web/components/EpisodeCard.tsx with styles in web/components/EpisodeCard.module.css
-- [ ] T015 [P] Implement audio player component in web/components/AudioPlayer.tsx with styles in web/components/AudioPlayer.module.css (button starts play; obvious pause/resume)
-- [ ] T016 Wire SiteHeader into web/app/layout.tsx so nav exists on all pages (links to /, /episodes, /about, /faq)
-- [ ] T017 Ensure mobile-first layout constraints are enforced in web/app/globals.css (typography scale + spacing that works on small screens)
+- [x] T007 [P] Define content types in web/content/types.ts (Episode, ShowInfo, FAQItem)
+- [x] T008 [P] Create ShowInfo content module in web/content/show.ts (stable show title/tagline/description)
+- [x] T009 [P] Create FAQ content module in web/content/faqs.ts with >= 5 items
+- [x] T010 [P] Create Episodes content module in web/content/episodes.ts with exactly 20 episodes and deterministic ordering rules
+- [x] T011 [P] Implement featured selection helper in web/content/episodes.ts (`getFeaturedEpisode()` returns most recent publishDate)
+- [x] T012 [P] Add mocked audio asset at web/public/audio/teaser.mp3 and reference it as Episode.audioSrc for all episodes
+- [x] T013 [P] Implement navigation header component in web/components/SiteHeader.tsx with styles in web/components/SiteHeader.module.css
+- [x] T014 [P] Implement episode card component in web/components/EpisodeCard.tsx with styles in web/components/EpisodeCard.module.css
+- [x] T015 [P] Implement audio player component in web/components/AudioPlayer.tsx with styles in web/components/AudioPlayer.module.css (button starts play; obvious pause/resume)
+- [x] T016 Wire SiteHeader into web/app/layout.tsx so nav exists on all pages (links to /, /episodes, /about, /faq)
+- [x] T017 Ensure mobile-first layout constraints are enforced in web/app/globals.css (typography scale + spacing that works on small screens)
 
 ---
 
