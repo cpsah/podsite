@@ -1,0 +1,58 @@
+openapi: 3.0.3
+info:
+  title: Podsite Static Pages
+  version: 1.0.0
+  description: |
+    Contract for the publicly accessible static pages in the Podcast Website MVP.
+    This is a static site (no database, no dynamic API). Responses are HTML.
+servers:
+  - url: /
+paths:
+  /:
+    get:
+      summary: Landing page
+      responses:
+        '200':
+          description: Landing page HTML
+          content:
+            text/html:
+              schema:
+                type: string
+        '404':
+          description: Not found
+  /episodes:
+    get:
+      summary: Episodes page
+      responses:
+        '200':
+          description: Episodes page HTML
+          content:
+            text/html:
+              schema:
+                type: string
+        '404':
+          description: Not found
+  /about:
+    get:
+      summary: About page
+      responses:
+        '200':
+          description: About page HTML
+          content:
+            text/html:
+              schema:
+                type: string
+        '404':
+          description: Not found
+  /faq:
+    get:
+      summary: FAQ page
+      responses:
+        '200':
+          description: FAQ page HTML
+          content:
+            text/html:
+              schema:
+                type: string
+        '404':
+          description: Not found

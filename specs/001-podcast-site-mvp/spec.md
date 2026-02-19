@@ -101,11 +101,6 @@ As a visitor, I want a clear and helpful “not found” page for mistyped or br
 
 ## Success Criteria *(mandatory)*
 
-<!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
--->
-
 ### Measurable Outcomes
 
 - **SC-001**: From the landing page, a visitor can reach the Episodes page in 1 click.
