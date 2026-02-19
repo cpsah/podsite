@@ -52,10 +52,10 @@
 
 **Independent Test**: Navigate to `/` and verify exactly one featured episode is shown and the Listen CTA starts mocked audio playback with pause/resume.
 
-- [ ] T018 [US1] Implement landing page in web/app/page.tsx using ShowInfo from web/content/show.ts
-- [ ] T019 [US1] Display exactly one featured episode (title + summary) in web/app/page.tsx using getFeaturedEpisode() from web/content/episodes.ts
-- [ ] T020 [US1] Implement primary Listen CTA in web/app/page.tsx that starts playback via web/components/AudioPlayer.tsx
-- [ ] T021 [US1] Add a one-click link to `/episodes` from the landing page in web/app/page.tsx (meets SC-001)
+- [x] T018 [US1] Implement landing page in web/app/page.tsx using ShowInfo from web/content/show.ts
+- [x] T019 [US1] Display exactly one featured episode (title + summary) in web/app/page.tsx using getFeaturedEpisode() from web/content/episodes.ts
+- [x] T020 [US1] Implement primary Listen CTA in web/app/page.tsx that starts playback via web/components/AudioPlayer.tsx
+- [x] T021 [US1] Add a one-click link to `/episodes` from the landing page in web/app/page.tsx (meets SC-001)
 
 **Checkpoint**: Landing page is MVP-complete and demoable.
 
@@ -67,10 +67,10 @@
 
 **Independent Test**: Navigate to `/episodes` and verify 20 episodes render in deterministic order; clicking Listen starts mocked audio with pause/resume.
 
-- [ ] T022 [US2] Implement Episodes page in web/app/episodes/page.tsx rendering the 20 episodes from web/content/episodes.ts
-- [ ] T023 [US2] Enforce deterministic ordering in web/app/episodes/page.tsx (publishDate desc, tie-break by id)
-- [ ] T024 [US2] Add per-episode Listen action in web/app/episodes/page.tsx using web/components/AudioPlayer.tsx
-- [ ] T025 [US2] Remove any randomness from episode generation so reload shows identical data/order (web/content/episodes.ts)
+- [x] T022 [US2] Implement Episodes page in web/app/episodes/page.tsx rendering the 20 episodes from web/content/episodes.ts
+- [x] T023 [US2] Enforce deterministic ordering in web/app/episodes/page.tsx (publishDate desc, tie-break by id)
+- [x] T024 [US2] Add per-episode Listen action in web/app/episodes/page.tsx using web/components/AudioPlayer.tsx
+- [x] T025 [US2] Remove any randomness from episode generation so reload shows identical data/order (web/content/episodes.ts)
 
 **Checkpoint**: Episodes catalog is stable and usable.
 
@@ -82,9 +82,9 @@
 
 **Independent Test**: From any page, use the header nav to open `/about` and `/faq`; verify About content is present and FAQ shows >= 5 Q/A items.
 
-- [ ] T026 [P] [US3] Implement About page in web/app/about/page.tsx using ShowInfo from web/content/show.ts
-- [ ] T027 [P] [US3] Implement FAQ page in web/app/faq/page.tsx rendering items from web/content/faqs.ts
-- [ ] T028 [US3] Verify SiteHeader links work site-wide (layout wiring in web/app/layout.tsx)
+- [x] T026 [P] [US3] Implement About page in web/app/about/page.tsx using ShowInfo from web/content/show.ts
+- [x] T027 [P] [US3] Implement FAQ page in web/app/faq/page.tsx rendering items from web/content/faqs.ts
+- [x] T028 [US3] Verify SiteHeader links work site-wide (layout wiring in web/app/layout.tsx)
 
 **Checkpoint**: Trust-building pages complete.
 
@@ -96,8 +96,8 @@
 
 **Independent Test**: Navigate to a non-existent route and confirm a “not found” message is shown with a link back to `/`.
 
-- [ ] T029 [US4] Implement not-found page in web/app/not-found.tsx with clear message + link back to `/`
-- [ ] T030 [US4] Validate not-found behavior works in static export output (adjust web/next.config.ts if required)
+- [x] T029 [US4] Implement not-found page in web/app/not-found.tsx with clear message + link back to `/`
+- [x] T030 [US4] Validate not-found behavior works in static export output (adjust web/next.config.ts if required)
 
 **Checkpoint**: Broken links are no longer dead ends.
 
@@ -107,12 +107,12 @@
 
 **Purpose**: Accessibility, performance, and documentation improvements that apply across pages.
 
-- [ ] T031 [P] Add skip-link + visible focus styles in web/app/layout.tsx and web/app/globals.css
-- [ ] T032 [P] Ensure AudioPlayer is keyboard operable with appropriate labels in web/components/AudioPlayer.tsx
-- [ ] T033 [P] Ensure any images used include alt text and don’t regress performance (web/public/images/ + component usage)
-- [ ] T034 Apply consistent “sleek” spacing/typography polish across pages in web/app/globals.css and component CSS modules
-- [ ] T035 Create web/README.md with dev/build/preview instructions consistent with specs/001-podcast-site-mvp/quickstart.md
-- [ ] T036 Run quickstart validation commands (`cd web && npm install && npm test && npm run build`) and fix any failures in web/package.json, web/next.config.ts, or page/components
+- [x] T031 [P] Add skip-link + visible focus styles in web/app/layout.tsx and web/app/globals.css
+- [x] T032 [P] Ensure AudioPlayer is keyboard operable with appropriate labels in web/components/AudioPlayer.tsx
+- [x] T033 [P] Ensure any images used include alt text and don't regress performance (web/public/images/ + component usage)
+- [x] T034 Apply consistent "sleek" spacing/typography polish across pages in web/app/globals.css and component CSS modules
+- [x] T035 Create web/README.md with dev/build/preview instructions consistent with specs/001-podcast-site-mvp/quickstart.md
+- [x] T036 Run quickstart validation commands (`cd web && npm install && npm test && npm run build`) and fix any failures in web/package.json, web/next.config.ts, or page/components
 
 ---
 

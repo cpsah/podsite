@@ -13,7 +13,10 @@
         "git ls-remote": true,
         "true": true,
         "npx create-next-app@latest": true,
-        "npx --yes create-next-app@latest": true
+        "npx --yes create-next-app@latest": true,
+        "npm test": true,
+        "npm run lint": true,
+        "npx eslint": true
     }
 }
 
